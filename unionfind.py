@@ -7,11 +7,13 @@ print(nums)
 def isConnected(p, q):
     if nums[p] == nums[q]:
         print("Connected")
+        return True
     else:
         print("Not connected")    
+        return False
 
 def union(p, q):
-    if isConnected(p, q) == "Connected":
+    if isConnected(p, q):
         print("Already connected")
         return
     else:
